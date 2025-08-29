@@ -53,20 +53,29 @@ body {
   top: 0;
   z-index: 10;
   backdrop-filter: blur(8px);
+  padding: 10px 0;
 }
 .site-header .wrap,
 .site-footer .wrap {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0.8rem 0;
 }
 .brand {
   font-weight: 700;
   letter-spacing: 0.5px;
 }
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
 
-nav a {
+nav ul li {
   color: var(--muted);
   text-decoration: none;
   margin-left: 1rem;
@@ -74,6 +83,12 @@ nav a {
 
 nav a:hover {
   color: var(--text);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 18px;
 }
 
 .hero h1 {
@@ -168,29 +183,56 @@ button.button {
 }
 
 .icon {
-  vertical-align: middle; /* Aligns the middle of the image with the text */
-  display: inline-block; /* Ensures consistent alignment */
-  margin-bottom: 10px; /* Adjust as needed */
+  vertical-align: middle;
+  display: inline-block;
+  margin-bottom: 10px;
   width: 32px;
   height: 32px;
 }
 
 a {
-  color: inherit; /* Link takes text color */
+  color: inherit;
   text-decoration: none;
 }
 
 a:hover {
-  color: #8af046; /* Optional hover color */
+  color: #e4fd54;
   text-decoration: underline;
 }
 
 .show {
-  color: inherit; /* Link takes text color */
+  color: inherit;
   text-decoration: none;
   background-color: #2f2f38;
 }
 .show:hover {
-  color: #996edf; /* Optional hover color */
+  color: #996edf;
   text-decoration: underline;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+  justify-items: center;
+} 
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 1px var(--accent), 0 0 20px rgba(122, 162, 255, 0.747);
+  transition: transform 0.3s ease;
+}
+
+.last-row {
+  width: 385px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  grid-column: 1 / -1; 
+  gap: 10px;
 }

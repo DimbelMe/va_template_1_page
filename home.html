@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home</title>
+    <title>Poppy VA</title>
     <meta name="description" content="Template" />
     <link rel="preload" href="styles.css" as="style" />
     <link rel="stylesheet" href="styles.css" />
@@ -11,24 +11,26 @@
   <body>
     <header class="site-header">
       <div class="wrap">
-        <div class="brand">VA Template</div>
-        <nav aria-label="Main">
-          <a href="#home">Home</a>
-          <a href="#showcase">Showcase</a>
-          <a href="#contact">Contact</a>
-          <a href="about.html">About</a>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#showcase">Showcase</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
         </nav>
       </div>
     </header>
     <main id="home" class="wrap">
       <section id="home" class="hero card">
-        <h1 class="Htitle">VA Template</h1>
+        <h1 class="Htitle">Poppy VA</h1>
         <p>
-          Welcome to "VA Template's Site". This site has a recollection of some
-          of my best works, an About section where you can get to know me better
-          and a Contact page for anyone interested!
+          Hi! I'm Poppy! Welcome to my website! Below you'll find some of my
+          best work that I've done to date. And if you like what you hear and
+          want to get in contact with me, you'll find all my contact information
+          below the showcase, including links to my social media pages!
         </p>
-        <img src="assets/Untitled.png" alt="" style="width: 400px" />
+        <img src="assets/images/cs2.webp" alt="" style="width: 600px" />
         <br />
         <p>
           I have participated in a multitude of projects, from Indie games to
@@ -43,6 +45,9 @@
       <!-- SHOWCASE SECTION -->
       <section id="showcase" class="hero card">
         <h1>Voice Showcase</h1>
+        <div>
+          <img src="assets/images/cs1.webp" alt="" style="width: 300px" />
+        </div>
         <p>
           Welcome to the Showcase site. It contains samples of some of my top
           works, alongside a direct link to my work folder in Google Drive.
@@ -62,31 +67,31 @@
           <h2>Character Samples</h2>
           <p>
             These are some of my cleanest voices and portrayals of my acting
-            skills. There is a wide variety of acting styles ranging from
-            cartoony to dark and heavy.
+            skills. There is a wide variety of acting styles and ages.
           </p>
+          <br />
           <details open>
             <summary>Play samples</summary>
             <div class="players">
               <div class="player">
                 <span>Character Sample 1</span>
-                <audio controls src="assets/character1.MP3"></audio>
+                <audio controls src="assets/audio_samples/c1.wav"></audio>
               </div>
               <div class="player">
                 <span>Character Sample 2</span>
-                <audio controls src="assets/character2.MP3"></audio>
+                <audio controls src="assets/audio_samples/c2.MP3"></audio>
               </div>
               <div class="player">
                 <span>Character Sample 3</span>
-                <audio controls src="assets/character3.MP3"></audio>
+                <audio controls src="assets/audio_samples/c3.wav"></audio>
               </div>
               <div class="player">
                 <span>Character Sample 4</span>
-                <audio controls src="assets/commercial-sample2.mp3"></audio>
+                <audio controls src="assets/audio_samples/c4.wav"></audio>
               </div>
               <div class="player">
                 <span>Character Sample 5</span>
-                <audio controls src="assets/commercial-sample1.mp3"></audio>
+                <audio controls src="assets/audio_samples/c5.MP3"></audio>
               </div>
             </div>
           </details>
@@ -96,7 +101,7 @@
           <h2>Commercial Samples</h2>
           <p>
             These are some of my favorite Commercial samples. Simple, succinct
-            yet elegant for a broader public.
+            aimed at a broader public.
           </p>
           <br />
           <details open>
@@ -104,57 +109,15 @@
             <div class="players">
               <div class="player">
                 <span>Commercial Sample 1</span>
-                <audio controls src="assets/commercial-sample1.mp3"></audio>
+                <audio controls src="assets/audio_samples/cm1.wav"></audio>
               </div>
               <div class="player">
                 <span>Commercial Sample 2</span>
-                <audio controls src="assets/commercial-sample2.mp3"></audio>
+                <audio controls src="assets/audio_samples/cm2.wav"></audio>
               </div>
               <div class="player">
                 <span>Commercial Sample 3</span>
-                <audio controls src="assets/commercial-sample1.mp3"></audio>
-              </div>
-              <div class="player">
-                <span>Commercial Sample 4</span>
-                <audio controls src="assets/commercial-sample2.mp3"></audio>
-              </div>
-              <div class="player">
-                <span>Commercial Sample 5</span>
-                <audio controls src="assets/commercial-sample1.mp3"></audio>
-              </div>
-            </div>
-          </details>
-        </article>
-
-        <article class="card">
-          <h2>Corporate Samples</h2>
-          <p>
-            These are some of my Corporate samples. These are small samples that
-            show warm, confident yet authoritative voices.
-          </p>
-          <br />
-          <details open>
-            <summary>Play samples</summary>
-            <div class="players">
-              <div class="player">
-                <span>Corporate Sample 1</span>
-                <audio controls src="assets/commercial-sample1.mp3"></audio>
-              </div>
-              <div class="player">
-                <span>Corporate Sample 2</span>
-                <audio controls src="assets/commercial-sample2.mp3"></audio>
-              </div>
-              <div class="player">
-                <span>Corporate Sample 3</span>
-                <audio controls src="assets/commercial-sample1.mp3"></audio>
-              </div>
-              <div class="player">
-                <span>Corporate Sample 4</span>
-                <audio controls src="assets/commercial-sample2.mp3"></audio>
-              </div>
-              <div class="player">
-                <span>Corporate Sample 5</span>
-                <audio controls src="assets/commercial-sample1.mp3"></audio>
+                <audio controls src="assets/audio_samples/cm3.wav"></audio>
               </div>
             </div>
           </details>
@@ -197,11 +160,10 @@
       </section>
       <footer class="site-footer">
         <div class="wrap">
-          <small>©2025</small>
+          <small>©PoppyVA 2025</small>
         </div>
       </footer>
     </main>
-
     <script src="script.js" defer></script>
   </body>
 </html>
