@@ -29,9 +29,10 @@ body {
   font-family: "Avenir Next LT Pro", system-ui, -apple-system, Segoe UI, Roboto,
     Ubuntu, Cantarell, Noto Sans, Arial, sans-serif;
   background: radial-gradient(
-      1400px 900px at 20% -10%,
-      #2a1b3d 0%,
-      #1a1a22 50%,
+      1600px 1000px at 25% -15%,
+      #3a2457 0%,
+      #2a1b3d 45%,
+      #1a1a22 80%,
       var(--bg) 100%
     ),
     var(--bg);
@@ -100,6 +101,17 @@ nav ul li a:hover {
   font-size: clamp(2rem, 3vw + 1rem, 3rem);
   margin: 0.2rem 0 0.6rem;
   color: var(--accent);
+}
+
+/* MAIN IMAGE */
+.main-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 14px;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.7),
+    0 0 12px rgba(163, 97, 224, 0.35);
 }
 
 /* CARDS */
@@ -258,4 +270,26 @@ a:hover {
   justify-content: center;
   grid-column: 1 / -1;
   gap: 10px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero h1 {
+    font-size: clamp(1.6rem, 5vw, 2.2rem);
+  }
+  .main-image {
+    width: 95%;
+    margin: 1rem auto;
+  }
 }
